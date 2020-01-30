@@ -125,6 +125,8 @@ class ProductProvider extends Component {
                 cart:[...tempCart],
                 products: [...tempProducts]
             }
+        }, () => {
+            this.addTotals();
         })
 
     };
